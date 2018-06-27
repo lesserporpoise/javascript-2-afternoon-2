@@ -168,7 +168,7 @@ function finder(arr){
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
-var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+ myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 // Do not edit the code above.
 
 /*
@@ -194,6 +194,22 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 
+function removeItem(myGroceryList,item){
+  if(myGroceryList && item){}
+  else{return []}
+  for (let i = 0; i < array.length; i ++) {
+  if(myGroceryList[i] === item){
+    myGroceryList.splice(i,1);
+    }console.log(myGroceryList)
+  }return myGroceryList;
+}
+
+function addItem(myGroceryList,item){
+  if(myGroceryList && item){}
+  else{return []}
+    myGroceryList.push(item);
+    return myGroceryList;
+  }
 
 
 
@@ -381,6 +397,7 @@ users['user3'] = {
   username: 'toastpoints2000'
 };
 
+console.log(users);
 
 
 /*
@@ -394,7 +411,7 @@ users['user3'] = {
 */
 function once(arr,emailx){
 for (let i = 0; i < arr.length; i ++){
-  if (arr[i].email === emailx){
+  if (user+i.email === emailx){
     arr.splice(i,1)
   }
 } return users;
